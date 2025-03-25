@@ -1,0 +1,6 @@
+/your-website-directory/
+    /fonts/
+        NotoNastaliqUrdu-Regular.ttf
+        NotoNastaliqUrdu-Bold.ttf
+    index.html
+    styles.css
