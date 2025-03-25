@@ -1,0 +1,901 @@
+/* General page styling */
+body {
+    background-color: #f0f4f8; /* Soft light blue-gray background */
+    text-align: center;
+    border: 15px solid #a2d5f2; /* Soft blue border */
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333; /* Dark gray for better readability */
+    margin: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header styling */
+header {
+    background-color: #76b39d; /* Soft green */
+    color: white;
+    padding: 20px;
+    margin: -30px -30px 20px -30px; /* Aligns header with body border */
+    border-bottom: 5px solid #5a9b8a; /* Darker green border for contrast */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: 600;
+}
+
+header h1:first-of-type {
+    margin-bottom: 10px; /* Adds spacing between the two h1 headings */
+}
+
+.emergency-info h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.emergency-info strong {
+    color: #ffeb3b; /* Highlight emergency numbers with a soft yellow */
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+    background-color: white; /* White background for content area */
+    border-radius: 10px; /* Rounded corners for modern look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px auto;
+    max-width: 800px; /* Limits width for better readability */
+}
+
+/* Intro section styling */
+.intro p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 20px 0;
+    color: #555; /* Slightly lighter text for softer look */
+}
+
+/* Resource links section styling */
+.resource-links ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.resource-links li {
+    margin: 15px 0;
+}
+
+.resource-links a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    background-color: #a2d5f2; /* Soft blue background */
+    color: #333; /* Dark gray text */
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.resource-links a:hover {
+    background-color: #76b39d; /* Soft green on hover */
+    transform: scale(1.05); /* Slightly enlarges the link */
+    color: white; /* White text on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+        border-width: 10px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header h3 {
+        font-size: 1em;
+    }
+
+    .resource-links a {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+    /* Additional CSS for Self-Referral Page */
+.intro {
+    background-color: white; /* White background for intro section */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.intro p1, .intro p2 {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 20px 0;
+    color: #555; /* Slightly lighter text for softer look */
+}
+
+.resource-links ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px; /* Wider container for better readability */
+}
+
+.resource-links li {
+    margin: 15px 0;
+}
+
+.resource-links a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    background-color: #a2d5f2; /* Soft blue background */
+    color: #333; /* Dark gray text */
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.resource-links a:hover {
+    background-color: #76b39d; /* Soft green on hover */
+    transform: scale(1.05); /* Slightly enlarges the link */
+    color: white; /* White text on hover */
+}
+
+.resource-links strong {
+    color: #800029; /* Highlight phone numbers with deep maroon */
+}
+}
+/* General page styling */
+body {
+    background-color: #f0f4f8; /* Soft light blue-gray background */
+    text-align: center;
+    border: 15px solid #a2d5f2; /* Soft blue border */
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333; /* Dark gray for better readability */
+    margin: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header styling */
+header {
+    background-color: #76b39d; /* Soft green */
+    color: white;
+    padding: 20px;
+    margin: -30px -30px 20px -30px; /* Aligns header with body border */
+    border-bottom: 5px solid #5a9b8a; /* Darker green border for contrast */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: 600;
+}
+
+header h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+/* Bubble container styling */
+.bubble-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Spread bubbles across the page */
+    gap: 20px; /* Space between bubbles */
+    margin: 20px auto;
+    max-width: 1200px; /* Limits width for better readability */
+}
+
+/* Bubble styling */
+.bubble {
+    background-color: white; /* White background for bubbles */
+    padding: 15px 20px;
+    border-radius: 20px; /* Rounded corners for bubble effect */
+    border: 2px solid #a2d5f2; /* Soft blue border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    flex: 1 1 calc(33.333% - 40px); /* Three bubbles per row with spacing */
+    max-width: calc(33.333% - 40px); /* Limits bubble width */
+    text-align: left; /* Align text to the left */
+}
+
+.bubble p, .bubble p2 {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 0;
+    color: #555; /* Slightly lighter text for softer look */
+}
+
+.bubble a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #a2d5f2; /* Soft blue background */
+    color: #333; /* Dark gray text */
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center text in links */
+}
+
+.bubble a:hover {
+    background-color: #76b39d; /* Soft green on hover */
+    transform: scale(1.05); /* Slightly enlarges the link */
+    color: white; /* White text on hover */
+}
+
+.bubble strong {
+    color: #800029; /* Highlight phone numbers with deep maroon */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+        border-width: 10px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+    }
+
+    .bubble {
+        flex: 1 1 calc(50% - 20px); /* Two bubbles per row on smaller screens */
+        max-width: calc(50% - 20px);
+        padding: 10px 15px;
+    }
+
+    .bubble a {
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bubble {
+        flex: 1 1 100%; /* One bubble per row on mobile */
+        max-width: 100%;
+    }
+}
+/* General page styling */
+body {
+    background-color: #f0f4f8; /* Soft light blue-gray background */
+    text-align: center;
+    border: 15px solid #a2d5f2; /* Soft blue border */
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333; /* Dark gray for better readability */
+    margin: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header styling */
+header {
+    background-color: #76b39d; /* Soft green */
+    color: white;
+    padding: 20px;
+    margin: -30px -30px 20px -30px; /* Aligns header with body border */
+    border-bottom: 5px solid #5a9b8a; /* Darker green border for contrast */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: 600;
+}
+
+header h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+/* Full-width section styling */
+.full-width-section {
+    background-color: white; /* White background for sections */
+    padding: 20px;
+    border-radius: 20px; /* Rounded corners for bubble effect */
+    border: 2px solid #a2d5f2; /* Soft blue border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px auto;
+    max-width: 100%; /* Full width */
+    text-align: left; /* Align text to the left */
+}
+
+.full-width-section h2 {
+    font-size: 1.5em;
+    color: #800029; /* Deep maroon for headings */
+    margin-bottom: 15px;
+}
+
+.full-width-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0;
+    color: #555; /* Slightly lighter text for softer look */
+}
+
+/* Advice grid styling */
+.advice-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 15px; /* Space between items */
+}
+
+.advice-item {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 15px;
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid #ddd; /* Light border */
+}
+
+.advice-item p {
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Link list styling */
+.link-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-list li {
+    margin: 10px 0;
+}
+
+.link-list a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #a2d5f2; /* Soft blue background */
+    color: #333; /* Dark gray text */
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.link-list a:hover {
+    background-color: #76b39d; /* Soft green on hover */
+    transform: scale(1.05); /* Slightly enlarges the link */
+    color: white; /* White text on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+        border-width: 10px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+    }
+
+    .advice-grid {
+        grid-template-columns: 1fr; /* One column on smaller screens */
+    }
+
+    .full-width-section {
+        padding: 15px;
+    }
+
+    .link-list a {
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+}
+/* General page styling */
+body {
+    background-color: #f0f4f8; /* Soft light blue-gray background */
+    text-align: center;
+    border: 15px solid #a2d5f2; /* Soft blue border */
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333; /* Dark gray for better readability */
+    margin: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header styling */
+header {
+    background-color: #76b39d; /* Soft green */
+    color: white;
+    padding: 20px;
+    margin: -30px -30px 20px -30px; /* Aligns header with body border */
+    border-bottom: 5px solid #5a9b8a; /* Darker green border for contrast */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: 600;
+}
+
+/* Bubble styling */
+.bubble {
+    background-color: white; /* White background for bubbles */
+    padding: 20px;
+    border-radius: 20px; /* Rounded corners for bubble effect */
+    border: 2px solid #a2d5f2; /* Soft blue border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px auto;
+    max-width: 100%; /* Full width */
+    text-align: left; /* Align text to the left */
+}
+
+.bubble h2 {
+    font-size: 1.5em;
+    color: #800029; /* Deep maroon for headings */
+    margin-bottom: 15px;
+}
+
+.bubble p, .bubble p2 {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0;
+    color: #555; /* Slightly lighter text for softer look */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table th {
+    background-color: #76b39d; /* Soft green for headers */
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for even rows */
+}
+
+/* Link list styling */
+.link-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-list li {
+    margin: 10px 0;
+}
+
+.link-list a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #a2d5f2; /* Soft blue background */
+    color: #333; /* Dark gray text */
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.link-list a:hover {
+    background-color: #76b39d; /* Soft green on hover */
+    transform: scale(1.05); /* Slightly enlarges the link */
+    color: white; /* White text on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+        border-width: 10px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .bubble {
+        padding: 15px;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+
+    .link-list a {
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+}
+/* General page styling */
+body {
+    background-color: #f0f4f8; /* Soft light blue-gray background */
+    text-align: center;
+    border: 15px solid #a2d5f2; /* Soft blue border */
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333; /* Dark gray for better readability */
+    margin: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header styling */
+header {
+    background-color: #76b39d; /* Soft green */
+    color: white;
+    padding: 20px;
+    margin: -30px -30px 20px -30px; /* Aligns header with body border */
+    border-bottom: 5px solid #5a9b8a; /* Darker green border for contrast */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: 600;
+}
+
+header h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+/* Bubble styling */
+.bubble {
+    background-color: white; /* White background for bubbles */
+    padding: 20px;
+    border-radius: 20px; /* Rounded corners for bubble effect */
+    border: 2px solid #a2d5f2; /* Soft blue border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px auto;
+    max-width: 100%; /* Full width */
+    text-align: left; /* Align text to the left */
+}
+
+.bubble h2 {
+    font-size: 1.5em;
+    color: #800029; /* Deep maroon for headings */
+    margin-bottom: 15px;
+}
+
+.bubble p, .bubble ul, .bubble ol {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0;
+    color: #555; /* Slightly lighter text for softer look */
+}
+
+.bubble ul, .bubble ol {
+    padding-left: 20px;
+}
+
+.bubble li {
+    margin: 10px 0;
+}
+
+/* Link list styling */
+.link-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-list li {
+    margin: 10px 0;
+}
+
+.link-list a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #a2d5f2; /* Soft blue background */
+    color: #333; /* Dark gray text */
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.link-list a:hover {
+    background-color: #76b39d; /* Soft green on hover */
+    transform: scale(1.05); /* Slightly enlarges the link */
+    color: white; /* White text on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+        border-width: 10px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+    }
+
+    .bubble {
+        padding: 15px;
+    }
+
+    .link-list a {
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+}
+/* General page styling */
+body {
+    background-color: #f0f4f8; /* Soft light blue-gray background */
+    text-align: center;
+    border: 15px solid #a2d5f2; /* Soft blue border */
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333; /* Dark gray for better readability */
+    margin: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header styling */
+header {
+    background-color: #76b39d; /* Soft green */
+    color: white;
+    padding: 20px;
+    margin: -30px -30px 20px -30px; /* Aligns header with body border */
+    border-bottom: 5px solid #5a9b8a; /* Darker green border for contrast */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: 600;
+}
+
+header h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+/* Bubble styling */
+.bubble {
+    background-color: white; /* White background for bubbles */
+    padding: 20px;
+    border-radius: 20px; /* Rounded corners for bubble effect */
+    border: 2px solid #a2d5f2; /* Soft blue border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px auto;
+    max-width: 100%; /* Full width */
+    text-align: left; /* Align text to the left */
+}
+
+.bubble h2 {
+    font-size: 1.5em;
+    color: #800029; /* Deep maroon for headings */
+    margin-bottom: 15px;
+}
+
+.bubble p, .bubble ul, .bubble ol {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0;
+    color: #555; /* Slightly lighter text for softer look */
+}
+
+.bubble ul, .bubble ol {
+    padding-left: 20px;
+}
+
+.bubble li {
+    margin: 10px 0;
+}
+
+/* Link list styling */
+.link-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-list li {
+    margin: 10px 0;
+}
+
+.link-list a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #a2d5f2; /* Soft blue background */
+    color: #333; /* Dark gray text */
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.link-list a:hover {
+    background-color: #76b39d; /* Soft green on hover */
+    transform: scale(1.05); /* Slightly enlarges the link */
+    color: white; /* White text on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+        border-width: 10px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+    }
+
+    .bubble {
+        padding: 15px;
+    }
+
+    .link-list a {
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+    /* General page styling */
+body {
+    background-color: #f0f4f8; /* Soft light blue-gray background */
+    text-align: center;
+    border: 15px solid #a2d5f2; /* Soft blue border */
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333; /* Dark gray for better readability */
+    margin: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header styling */
+header {
+    background-color: #76b39d; /* Soft green */
+    color: white;
+    padding: 20px;
+    margin: -30px -30px 20px -30px; /* Aligns header with body border */
+    border-bottom: 5px solid #5a9b8a; /* Darker green border for contrast */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: 600;
+}
+
+header h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+/* Bubble styling */
+.bubble {
+    background-color: white; /* White background for bubbles */
+    padding: 20px;
+    border-radius: 20px; /* Rounded corners for bubble effect */
+    border: 2px solid #a2d5f2; /* Soft blue border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px auto;
+    max-width: 100%; /* Full width */
+    text-align: left; /* Align text to the left */
+}
+
+.bubble h2 {
+    font-size: 1.5em;
+    color: #800029; /* Deep maroon for headings */
+    margin-bottom: 15px;
+}
+
+.bubble p, .bubble ul, .bubble ol {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0;
+    color: #555; /* Slightly lighter text for softer look */
+}
+
+.bubble ul, .bubble ol {
+    padding-left: 20px;
+}
+
+.bubble li {
+    margin: 10px 0;
+}
+
+/* Link list styling */
+.link-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-list li {
+    margin: 10px 0;
+}
+
+.link-list a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #a2d5f2; /* Soft blue background */
+    color: #333; /* Dark gray text */
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.link-list a:hover {
+    background-color: #76b39d; /* Soft green on hover */
+    transform: scale(1.05); /* Slightly enlarges the link */
+    color: white; /* White text on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+        border-width: 10px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+    }
+
+    .bubble {
+        padding: 15px;
+    }
+
+    .link-list a {
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+}
+}
